@@ -19,9 +19,13 @@ public class PaymentmanagementApplication {
     @Value("${spring.profiles}")
     private static String conf;
 
+    @Value("${server.port}")
+    private static String port;
+
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(PaymentmanagementApplication.class, args);
         System.out.println("${app.text.msg} : " + test);
         System.out.println("${spring.profiles}" + conf);
+        System.out.println("${server.port}" + port);
     }
 }
