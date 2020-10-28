@@ -63,3 +63,6 @@ spring:
         event-out:
           destination: pizza
           contentType: application/json
+app:
+  text:
+    msg: ${configtext}
