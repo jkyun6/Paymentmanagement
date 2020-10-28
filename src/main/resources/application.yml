@@ -66,3 +66,4 @@ spring:
 app:
   text:
     msg: ${configtext}
+    msg2: testmsg
