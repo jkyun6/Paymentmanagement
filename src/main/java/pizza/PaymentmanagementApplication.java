@@ -16,6 +16,9 @@ public class PaymentmanagementApplication {
     @Value("${app.text.msg}")
     private static String test;
 
+    @Value("${app.text.msg2}")
+    private static String test2;
+
     @Value("${spring.profiles}")
     private static String conf;
 
@@ -25,6 +28,7 @@ public class PaymentmanagementApplication {
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(PaymentmanagementApplication.class, args);
         System.out.println("${app.text.msg} : " + test);
+        System.out.println("${app.text.msg2} : " + test2);
         System.out.println("${spring.profiles}" + conf);
         System.out.println("${server.port}" + port);
     }
