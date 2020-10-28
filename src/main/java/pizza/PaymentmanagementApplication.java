@@ -14,5 +14,6 @@ public class PaymentmanagementApplication {
     protected static ApplicationContext applicationContext;
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(PaymentmanagementApplication.class, args);
+        System.out.println("${app.text.msg}");
     }
 }
