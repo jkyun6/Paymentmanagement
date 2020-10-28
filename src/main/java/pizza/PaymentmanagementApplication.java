@@ -16,9 +16,12 @@ public class PaymentmanagementApplication {
     @Value("${app.text.msg}")
     private static String test;
 
+    @Value("${spring.profiles}")
+    private static String conf;
+
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(PaymentmanagementApplication.class, args);
         System.out.println("${app.text.msg} : " + test);
-        System.out.println("${spring.profiles}");
+        System.out.println("${spring.profiles}" + conf);
     }
 }
