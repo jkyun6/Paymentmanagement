@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: paymentmanagement
-          image: skcc02acr.azurecr.io/paymentmanagement:latest
+          image: skcc12acr.azurecr.io/paymentmanagement:latest
           ports:
             - containerPort: 8080
           env:
