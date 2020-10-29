@@ -19,9 +19,3 @@ spec:
           image: skcc12acr.azurecr.io/paymentmanagement:latest
           ports:
             - containerPort: 8080
-          env:
-            - name: configtext
-              valueFrom:
-                configMapKeyRef:
-                  name: pizzaconfigmap
-                  key: key1
